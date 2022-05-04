@@ -54,11 +54,11 @@ input.on('data', function(key) {
   }
   drawBoard();
   if (checkforVictory()) {
-    output.write(`${INACTIVE_PLAYER_TOKEN} wins!`);
+    output.write(`${INACTIVE_PLAYER_TOKEN}'s' win!\n`);
     process.exit();
   }
   if (count > 8) {
-    output.write("It's a draw!");
+    output.write("It's a draw!\n");
     process.exit();
   }
 });
